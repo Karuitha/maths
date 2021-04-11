@@ -1,0 +1,124 @@
+---
+title: "Karatina University"
+author: "Instructor; John Karuitha"
+date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+params:
+  course: 'ECO 113: INTRODUCTION TO MATHS II'
+subtitle: School of Business
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## COURSE OUTLINE: `r params$course`  (March - July, 2021)
+
+## COURSE PURPOSE
+The program aims at equipping the student with skills in statistical analysis for making decisions. The course does so by allowing students to build an intuition instead of merely plugging numbers into a formula.
+
+## COURSE TOPICS
+Functions; Exponential and logarithm. Higher - order determinants. Matrix Inversion. Cramer's Rule. Calculus: Maxima and Minima. Integration and applications First - order Differential Equation.
+
+## COURSE LEARNING OUTCOMES
+At the end of the course, the learner should be able to;
+
+1. Distinguish different types of functions.
+2. Solve equations in different functional forms.
+3. Solve systems of equations using matrices. 
+4. Apply differential and integral calculus to economic settings. 
+
+## COURSE CONTENT
+
+- Functions.
+    - Background and Definitions.
+    - Linear equations and functions.
+    - Quadratic and other special functions.
+    - Exponential and logarithmic functions.
+    - Introduction to R and R Studio.
+    
+- Matrix algebra
+    - Introduction to matrices and related terminology.
+    - Matrix addition, subtraction and multiplication.
+    - The determinant and inverse of a matrix.
+    - Solving systems of equations - Crammer's Rule. 
+    - Applications of matrix algebra- the Leontief input-output models.
+    - Matrix algebra in R.
+    - Introduction to latex, knitr and R markdown.
+    - Writing a report in R Markdown
+    
+- Higher order determinants
+    - Determinants for matrices of higher dimensions (greater than 2X2).
+    - Applications.
+
+- Differential calculus
+    - Introduction to differential calculus.
+    - Terminology and notation.
+    - Rules of differentiation.
+    - Applications of differentiation.
+
+- Integral calculus
+    - Introduction to differential calculus.
+    - Terminology and notation.
+    - Rules of integretion.
+    - Applications of integration.
+    
+- First order differential equations
+
+## MODE OF DELIVERY OF THE COURSE
+The course will be delivered using online lectures and discussions based on case studies and presentations by students.
+
+## INSTRUCTIONAL MATERIALS/ EQUIPMENT
+
+- Please make a point of checking YouTube and online resources like EdX and Coursera for additional material and clarification. 
+
+- I have made arrangements that technicians at the computers labs at the University install `R` and `R Studio` on the computers.  
+
+- For students who own personal computers, please install both `R` and `R studio` from the internet. Confirm whether your computer is 32-bit or 64 bit and install the appropriate version. Each software is free. 
+
+- `R` is availabe on this link <https://cran.r-project.org/bin/windows/base/>.
+
+- `R_Studio` is available on this link <https://rstudio.com/products/rstudio/download/>.
+
+- Both `R` and `R-Studio` are available for Mac, Linux, and Windows-based systems. Choose the appropriate version for your computer. 
+
+- For students who own tablets, you can neither install `R` nor `R Studio`. However, you can access the service online through `R Studio Cloud`. You have to be connected to the internet to access and use this service. Students with personal computers may also opt for this route. 
+
+\newpage
+
+## COURSE ASSESSMENT
+The course will be assessed using 3 continuous assessment tests, 1 project-based class assignment and 1 final exam, as shown in Table 1 below.
+
+```{r, echo = FALSE}
+library(tibble)
+library(kableExtra)
+tribble(~ Assessment, ~ Contribution,
+        "CAT 1: Multiple Choice", "5%",
+        "CAT 2: Multiple Choice", "5%",
+        "CAT 3: Sit in: Essays and Computations", "10%",
+        "CAT 4: Project report", "10%", 
+        "Final Examination", "70%", 
+        "TOTAL", "100%") %>% 
+  
+  kableExtra::kbl(., caption = "", 
+      
+  booktabs = TRUE) %>% 
+  
+  kable_paper(full_width = TRUE, font_size = 12)
+```
+
+
+## References
+
+Harshbarger, R. J., & Reynolds, J. J. (2012). Mathematical applications for the management, life, and social sciences. Nelson Education.
+
+Wainwright, K. (2005). Fundamental methods of mathematical economics. McGraw-Hill/Irwin.
+
+I will share online resources especially on youtube in the course of the class. 
+
+
+

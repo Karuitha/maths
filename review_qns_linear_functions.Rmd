@@ -1,0 +1,125 @@
+---
+title: 'Review Questions: Solving Linear Equations'
+author: "John Karuitha"
+date: "3/22/2021"
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Question one- Revenue, costs and Profit
+- Suppose a calculator manufacturer has the total cost given by the equation;
+
+  - $c(x) = 34x + 6800$
+
+  - And the total revenue is $R(x) = 68x$
+
+  - What is the profit function for the calculator?
+
+  - What is the break-even point?
+
+  - What is the profit/loss from the sale of 6000 units?
+
+## Question two- Revenue, costs and Profit
+- Suppose a calculator manufacturer has the total cost given by the equation;
+
+  - $c(x) = 85x + 3300$
+
+  - And the total revenue is $R(x) = 385x$
+
+  - What is the profit function for the computer company?
+
+  - How many computers must the company sell to avoid losing money?
+
+  - What is the profit/loss from the sale of 400 computers?
+
+## Review questions; Marginal revenues, marginal costs and marginal profits. 
+
+- Let $C(x) = 5x + 250$ and $R(x) = 27x$, where $C(x)$ and $R(x)$ are cost and revenue functions respectively.
+
+  - What is the marginal cost? Marginal revenue? What do these values mean?
+
+  - Write the profit function, $P(x)$.
+
+  - What is the slope of the profit function?
+
+  - What is the marginal profit? 
+
+  - What is the interpretation of the marginal profit above?
+
+## Review questions; Marginal revenues, marginal costs and marginal profits. 
+
+- A manufacturer of DVD players has monthly fixed costs of Ksh. 9800 and variable costs of Ksh. 65 per unit for one particular model. The company sells this model to dealers for Ksh. 100 each.
+
+  - For this model DVD player, write the function for monthly total costs.
+  - Write the function for total revenue.
+  - What is the marginal revenue? What does this value mean?
+  - What is the marginal cost? What does this value mean?
+  - Write the function for profit.
+  - Find C(250), R(250), and P(250) and interpret each answer.
+  - Find C(400), R(400), and P(400) and interpret each answer.
+  - Find the marginal profit and write a sentence that explains its meaning.
+
+## Review questions; Break-even point
+- A manufacturer sells belts for Ksh 12 per unit. The fixed costs are Ksh 1600 per month, and the variable cost per unit is Ksh8.
+  - Write the equations of the revenue and cost functions.
+  - Find the break-even point.
+
+## Review questions; Break-even point
+- Financial Paper, Inc. is a printer of checks and forms for financial institutions. For individual accounts, boxes of 200 checks cost Ksh 0.80 per box to print and pack- age and sell for Ksh 4.95 each. Financial Paper’s monthly fixed costs for printing and packaging these checks for individuals are Ksh 1245.
+  -Write the function for Financial Paper’s monthly total costs.
+  - Write the function for Financial Paper’s monthly total revenue.
+  - Write the function for Financial Paper’s monthly profit.
+  - Find the number of orders for boxes of checks for individual accounts that Financial Paper must receive and fill each month to break even.
+  
+## Review questions; Market equilibrium
+- Find the market equilibrium point for the following demand and supply functions.
+
+  - Demand: $p = -2q + 320$
+  - Supply: $p = 8q + 2$
+  
+  NB: When faced with this type of question, you must make p the subject of the formula and then set demand = supply. In this case, this has already been done for you. See question below. 
+  
+## Review questions; Market equilibrium
+- Find the market equilibrium point for the following demand and supply functions.
+
+  - Demand: $3p + 2q = 320$
+  - Supply: $4p - 5q= 200$
+  
+- Plot the two equations on the same axis. Note that the demand curve has a negative slope. The supply curve has a positive slope. Why? Review the laws of demand and supply. 
+
+## Review questions; Market equilibrium (This question and the next need additional research)
+- Suppose that a certain product has the following demand and supply functions.
+
+  - Demand: $60p + q = 2100$
+  
+  - Supply: $120p - q = 540$
+
+If a Ksh 0.50 tax per item is levied on the supplier, who passes it on to the consumer as a price increase, find the market equilibrium point after the tax.
+
+## Review questions; Market equilibrium 
+- Suppose that a certain product has the following demand and supply functions.
+
+  - Demand: $p = -8q + 2800$
+  
+  - Supply: $p = 3q + 35$
+
+If a Ksh 15 tax per item is levied on the supplier, who passes it on to the consumer as a price increase, find the market equilibrium point after the tax.
+
+## EXTENDED APPLICATION TO THINK ABOUT
+- Southwest Hospital has an operating room used only for eye surgery. The annual cost of rent, heat, and electricity for the operating room and its equipment is Ksh 360,000, and the annual salaries of the people who staff this room total Ksh 540,000. Each surgery performed requires the use of Ksh 760 worth of medical supplies and drugs. To promote goodwill, every patient receives a bouquet of flowers the day after surgery. In addition, one-quarter of the patients require dark glasses, which the hospital provides free of charge. It costs the hospital Ksh 30 for each bouquet of flowers and Ksh 40 for each pair of
+glasses. The hospital receives a payment of Ksh 2000 for each eye operation performed.
+
+## EXTENDED APPLICATION TO THINK ABOUT
+- Identify the revenue per case and the annual fixed and variable costs for running the operating room.
+- How many eye operations must the hospital perform each year in order to break even?
+- Southwest Hospital currently averages 70 eye operations per month. One of the nurses has just learned about a machine that would reduce by Ksh 100 per patient the amount of medical supplies needed. It can be leased for Ksh 100,000 annually. Keeping in mind the financial cost and benefits, advise the hospital on whether it should lease this machine.
+
+## EXTENDED APPLICATION TO THINK ABOUT
+- An advertising agency has proposed to the hospitals president that she spend Ksh 20,000 per month on television and radio advertising to persuade people that Southwest Hospital is the best place to have any eye surgery performed. Advertising account executives estimate that such publicity would increase business by 40 operations per month. If they are correct and if this increase is not big enough to affect fixed costs, what impact would this advertising have on the hospital’s profits?
+- In case the advertising agency is being overly optimistic, how many extra operations per month are needed to cover the cost of the proposed ads?
+- If the ad campaign is approved and subsequently meets its projections, should the hospital review its decision about the machine discussed in Question 3?
