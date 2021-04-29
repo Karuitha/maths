@@ -1,0 +1,86 @@
+---
+title: "Leontief Input-Output matrix"
+author: "John Karuitha"
+date: "4/29/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The Leontief Input-Output Matrix
+### Introduction
+- Used in economic planning. 
+
+- Especially in centrally planned economies.
+
+- Vasilly Leotief. 
+
+### The concept
+
+- Suppose you produce 100 kgs of maize, and consume half of it. 
+- How much can you sell? 100 - 0.5(100) = 50
+- Suppose you produce X kgs and consume 0.7 (a fraction of X). 
+- How much can you sell? X - 0.7X
+- Suppose you produce X kgs and consume A (A is a fraction of X). 
+- How much can you sell? X - AX = X(1 - A).
+
+- What is the equivalent of ZERO in matrix algebra?
+    - If you want to show that there is nothing in matrix algebra, how would you           write it? It has only Zeros. NULL matrix. It is a matrix that has zeros as           elements. 
+- What is the equivalent of ONE in matrix algebra? The IDENTITY matrix. It has ones i the main diagonal, and zeros everywhere else. 
+
+```{r}
+## Example of a NULL matrix
+matrix(c(0,0,0,0,0,0,0,0,0), nrow = 3)
+
+## Example of an identity matrix
+matrix(c(1,0,0,0,1,0,0,0,1), byrow= TRUE, nrow = 3)
+```
+
+- What is the symbol for Identity matrix? I
+
+- X(I - A) ### NB: This represents a surplus or excess produce that you can sell out. 
+- We call this the surplus or the final demand, D. 
+
+- Hence we can write, D = X(I - A), where A is the amount consumed internally. 
+
+- Let us try to solve for X. 
+
+- $X = \frac{D}{(I - A)} = \frac{1}{(I - A)} * D = (I - A)^{-1} * D$
+
+$X = (I - A)^{-1} * D$
+
+- NB: X is what you need to produce. 
+
+- A is the fraction of the produce you use internally. 
+
+- D is the final demand or surplus. The amount you can sell outside after satisfying your internal demand. 
+
+- Given A and D, can you solve for X? This is the central idea of the Leontief input-Output matrix. 
+
+## Examples in the slides: 
+
+
+```{r}
+I <- matrix(c(1,0,0,0,1,0,0,0,1), byrow= TRUE, nrow = 3)
+I
+
+A <- matrix(c(0.5,0.1,0.1,0.2,0.5,0.3,0.1,0.3,0.4), byrow= TRUE, nrow = 3)
+A
+```
+
+```{r}
+W = I - A
+W
+
+W_inverse <- solve(W)
+
+D = matrix(c(85,65,0), byrow = FALSE, nrow = 3)
+D
+
+W_inverse %*% D
+```
+

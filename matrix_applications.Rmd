@@ -1,0 +1,235 @@
+---
+title: "Matrix Algebra: Applications"
+author: "John Karuitha"
+date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
+header-includes:
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+- \usepackage{amsmath}
+- \usepackage{tabu}
+output:
+  ioslides_presentation:
+    transition: slower
+    theme: darkly
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, echo = FALSE, fig.width = 4, fig.height = 4)
+```
+
+
+## Applications
+
+- We do a series of exercises to show applications that include:
+
+    - Solving systems of equations. 
+    
+    - Applications to business. 
+    
+    - The Leontief Input-Output Model. 
+    
+    
+## Solving systems of equations
+
+- Can you recall the Crammers rule. 
+
+- If so, refresh by solving the following system of equations. 
+
+- $2x + 3y = 8$
+- $x + y = 3$
+
+- In this case, you are just replacing the the answers column vector (8,3) in the corresponding x or y values and the  getting the determinants of both matrices. 
+
+- The exact priciple applies to a 3 X 3 matrix and more. Just more work is required to get the determinant of a 3X3 matrix. 
+
+## Examples: Solving a 3 X 3 matrix 
+
+Given the following set of equations
+
+$x + 2y + z = 5$
+
+$2x + y - z = 1$
+
+$x + y + z = 4$
+
+- Write the system of equations in matrix form. 
+
+- Use the crammers rule to solve the equation.
+
+- NB: This will give you enough practice to compute determinants for 3 X 3 matrices. 
+
+## ## Examples: Solving a 3 X 3 matrix 
+
+- Use the crammers rule to solve the following set of equations. 
+
+$x + y + z = 6$
+
+$x + y - z = 0$
+
+$x + y + 5z = 18$
+
+
+
+
+## Extended applications ----
+
+```{r}
+library(tibble)
+
+tribble(~ `.`, ~ Steel, ~ Cement,
+        
+        "Unit Volume (Cubic Metres)", "4", "10",
+        
+        "Unit Weight (KG)", "50", "40") %>% 
+  
+  knitr::kable(caption = "Volume and Weight of Steel vs Cement") %>% 
+  
+  kableExtra::kable_styling(font_size = 10, full_width = TRUE)
+```
+
+
+- If truck A can carry 1350 cu metres and 13,000 kg, how many of each product can it carry?
+
+- If truck B can carry 1500 cu ft and 14,500 kg, how many of each product can it carry?
+
+- Hint: The weight and volume of materials (matrix above) multiplied by amount they can carry (say X and Y) should equal the capacity of the trucks (truck A has capacity of 1350 cu meters and 13000 kgs). 
+
+
+## The Leontief Input-Output Matrix
+
+Suppose we consider a simple economy as being based on three commodities:
+
+- Agricultural products, 
+
+- Manufactured goods, and 
+
+- Fuels. 
+
+Suppose further that production of 10 units of agricultural products requires 5 units of agricultural
+products, 2 units of manufactured goods, and 1 unit of fuels; that production of 10 units of manufactured goods requires 1 unit of agricultural products, 5 units of manufactured products, and 3 units of fuels; and that production of 10 units of fuels requires 1 unit of agricultural products, 3 units of manufactured goods,
+and 4 units of fuels.
+
+## The Leontief Input-Output Matrix
+
+- The table below summarizes this information in terms of production of 1 unit. The first column represents the units of agricultural products, manufactured goods, and fuels, respectively, that are needed to produce 1 unit of agricultural products. Column 2 represents the units required to produce 1 unit of manufactured goods, and column 3 represents the units required to produce 1 unit of fuels.
+
+## The Leontief Input-Output Matrix
+
+```{r}
+library(tibble)
+
+tribble(~ ` `, ~ ` `, ~ Output, ~ ` `,
+        
+        "Inputs", "Agricultural Products", "Manufactured Goods", "Fuels",
+        
+        "Agricultural Products", "0.5", "0.1", "0.1",
+        
+        "Manufactured Goods", "0.2", "0.5", "0.3",
+        
+        "Fuels", "0.1", "0.3", "0.4") %>% knitr::kable(caption = "Input-Output matrix") %>% 
+  
+  kableExtra::kable_styling(full_width = TRUE, font_size = 10)
+```
+
+
+## The Leontief Input-Output Matrix
+
+- Note the tables shows the amounts of inputs required ONE output of a product. 
+
+- For instance, to produce one unit of agricultural products requires 0.5 units of agricultural products, 0.2 units of manufactured goods, and 0.1 units of fuel. 
+
+
+## The Leontief Input-Output Matrix
+
+- Examples:
+
+    - How many units of agricultural products and of fuels are required to produce 100 units of manufactured goods? 
+    
+Referring to column 2, manufactured goods, we see that 1 unit requires 0.1 unit of agricultural products and 0.3 unit of fuels. Thus 100 units of manufactured goods require 10 units of agricultural products and 30 units of fuels.
+
+## The Leontief Input-Output Matrix
+
+    - Production of which commodity is least dependent on the other two?
+Looking down the columns, we see that 1 unit of agricultural products requires 0.3 unit of the other two commodities; 1 unit of manufactured goods requires 0.4 unit of the other two; and 1 unit of fuels requires 0.4 unit of the other two. Thus production of agricultural products is least dependent on the others
+
+## The Leontief Input-Output Matrix
+    
+    - If fuel costs rise, which two industries will be most affected?
+A rise in the cost of fuels would most affect those industries that use the larger amounts of fuels. One unit of agricultural products requires 0.1 unit of fuels, whereas a unit of manufactured goods requires 0.3 unit, and a unit of fuels requires 0.4 of its own units. Thus manufacturing and the fuel industry would be most affected by a cost increase in fuels.
+
+## The Leontief Input-Output Matrix
+From the Table above, we can form matrix A, which is called a technology matrix or a Leontief matrix.
+
+\[
+{\begin{bmatrix}
+Z       \\
+            \end{bmatrix}
+            }
+            =
+{\begin{bmatrix}
+0.5  & 0.1 & 0.1  \\
+0.2 & 0.5 & 0;3 \\
+0.1 & 0.3 & 0.4
+            \end{bmatrix}
+            }
+\]
+
+
+## The Open Leontief Model
+
+- Assume that the three industries produce an amount X
+
+\[
+{\begin{bmatrix}
+X      \\
+            \end{bmatrix}
+            }
+            =
+{\begin{bmatrix}
+x_{1}   \\
+x_{2} \\
+x_{3}
+            \end{bmatrix}
+            }
+\]
+
+
+- Let the matrix above represent a fraction, say A of the total production X used in the three industries. 
+
+- Of the total production, what is used within the three industries is thn $AX$. 
+
+## The Open Leontief Model
+
+- However, not all the units, say in agriculture, are used within agriculture manufacturing and fuels. 
+
+- The units of agriculture that remain after use in agriculture, manufacturing and fuels are called surpluses or final demands (it is what others outside agriculture, manufacturing and fuels can buy). 
+
+- The surpluses in this case are $X - AX$
+
+- The final demands  or surpluses are abbreviated as D, hence;
+
+$D = X - AX$, meaning $D = X(I - A)$
+
+## The Open Leontief Model
+
+- I is the identity matrix, X is the gross production, A is the portion of production used within the industries (given by the technology matrix). 
+
+- Given I, A, and the surpluses demand, D, we can then compute the required production to meet inter-industry demand and leave a surplus for other consumers. 
+
+- $X = (I - A)^{-1} * D$
+
+- You must now remember how to compute the inverse of a matrix. 
+
+## The Open Leontief Model
+
+- Example: In the case above, how much must the three industries produce to have a surplus of 85, 65, and 0 for agriculture, industry, and fuels respectively. 
+
+
+## exercise 2
+The economy of a developing nation is based on agricultural products, steel, and coal. An output of 1 ton of agricultural products requires inputs of 0.1 ton of agricultural products, 0.02 ton of steel, and 0.05 ton of coal. An output of 1 ton of steel requires inputs of 0.01 ton of agricultural products, 0.13 ton of steel, and 0.18 ton of coal. An output of 1 ton of coal requires inputs of 0.01 ton of agricultural products, 0.20 ton of steel, and 0.05 ton of coal. Write the technology matrix for this economy. Find the necessary gross productions to provide surpluses of 2350 tons of agricultural products, 4552 tons of steel, and 911 tons of coal.
+
