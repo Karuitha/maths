@@ -125,7 +125,7 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Tuesday, April 20, 2021</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Wednesday, May 05, 2021</p>
           </hgroup>
   </slide>
 
@@ -546,7 +546,50 @@ x_{3}
 
 </article></slide><slide class=""><hgroup><h2>exercise 2</h2></hgroup><article  id="exercise-2">
 
-<p>The economy of a developing nation is based on agricultural products, steel, and coal. An output of 1 ton of agricultural products requires inputs of 0.1 ton of agricultural products, 0.02 ton of steel, and 0.05 ton of coal. An output of 1 ton of steel requires inputs of 0.01 ton of agricultural products, 0.13 ton of steel, and 0.18 ton of coal. An output of 1 ton of coal requires inputs of 0.01 ton of agricultural products, 0.20 ton of steel, and 0.05 ton of coal. Write the technology matrix for this economy. Find the necessary gross productions to provide surpluses of 2350 tons of agricultural products, 4552 tons of steel, and 911 tons of coal.</p></article></slide>
+<p>The economy of a developing nation is based on agricultural products, steel, and coal. An output of 1 ton of agricultural products requires inputs of 0.1 ton of agricultural products, 0.02 ton of steel, and 0.05 ton of coal. An output of 1 ton of steel requires inputs of 0.01 ton of agricultural products, 0.13 ton of steel, and 0.18 ton of coal. An output of 1 ton of coal requires inputs of 0.01 ton of agricultural products, 0.20 ton of steel, and 0.05 ton of coal. Write the technology matrix for this economy. Find the necessary gross productions to provide surpluses of 2350 tons of agricultural products, 4552 tons of steel, and 911 tons of coal.</p>
+
+</article></slide><slide class=""><hgroup><h2>Solution to exercise 1</h2></hgroup><article  id="solution-to-exercise-1">
+
+</article></slide><slide class=""><hgroup><h2>Note that</h2></hgroup><article  id="note-that">
+
+<p>\(X(I - A)^{-1} = D\)</p>
+
+<ul>
+<li><p>Where I is the identity matrix.</p></li>
+<li><p>A is the technology matrix.</p></li>
+<li><p>D are the surpluses required.</p></li>
+<li><p>Let us define the three matrices</p></li>
+</ul>
+
+<pre >##      [,1] [,2] [,3]
+## [1,]    1    0    0
+## [2,]    0    1    0
+## [3,]    0    0    1</pre>
+
+<pre >##      [,1] [,2] [,3]
+## [1,]  0.5  0.1  0.1
+## [2,]  0.2  0.5  0.3
+## [3,]  0.1  0.3  0.4</pre>
+
+<pre >##      [,1]
+## [1,]   85
+## [2,]   65
+## [3,]    0</pre>
+
+<pre >##      [,1] [,2] [,3]
+## [1,]  0.5 -0.1 -0.1
+## [2,] -0.2  0.5 -0.3
+## [3,] -0.1 -0.3  0.6</pre>
+
+<pre >##          [,1]     [,2]     [,3]
+## [1,] 2.658228 1.139241 1.012658
+## [2,] 1.898734 3.670886 2.151899
+## [3,] 1.392405 2.025316 2.911392</pre>
+
+<pre >##      [,1]
+## [1,]  300
+## [2,]  400
+## [3,]  250</pre></article></slide>
 
 
   <slide class="backdrop"></slide>

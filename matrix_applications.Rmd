@@ -8,13 +8,13 @@ header-includes:
 - \usepackage{amsmath}
 - \usepackage{tabu}
 output:
-  ioslides_presentation:
-    transition: slower
-    theme: darkly
   beamer_presentation:
     theme: "CambridgeUS"
     colortheme: "dolphin"
     fonttheme: "structurebold"
+  ioslides_presentation:
+    transition: slower
+    theme: darkly
   slidy_presentation: default
 ---
 
@@ -232,4 +232,45 @@ $D = X - AX$, meaning $D = X(I - A)$
 
 ## exercise 2
 The economy of a developing nation is based on agricultural products, steel, and coal. An output of 1 ton of agricultural products requires inputs of 0.1 ton of agricultural products, 0.02 ton of steel, and 0.05 ton of coal. An output of 1 ton of steel requires inputs of 0.01 ton of agricultural products, 0.13 ton of steel, and 0.18 ton of coal. An output of 1 ton of coal requires inputs of 0.01 ton of agricultural products, 0.20 ton of steel, and 0.05 ton of coal. Write the technology matrix for this economy. Find the necessary gross productions to provide surpluses of 2350 tons of agricultural products, 4552 tons of steel, and 911 tons of coal.
+
+
+## Solution to exercise 1
+## Note that 
+
+$X(I - A)^{-1} = D$
+
+- Where I is the identity matrix.
+
+- A is the technology matrix.
+
+- D are the surpluses required.
+
+- Let us define the three matrices
+
+```{r}
+## This is the identity matrix
+I = matrix(c(1,0,0,0,1,0,0,0,1), byrow = TRUE, nrow = 3)
+I
+
+## This is the technology matrix
+A = matrix(c(0.5, 0.1, 0.1, 0.2, 0.5, 0.3, 0.1, 0.3, 0.4), byrow = TRUE, nrow = 3)
+A
+
+## The surpluses or fina; demands matrix (D)
+D = matrix(c(85, 65, 0), byrow = TRUE, nrow = 3)
+
+D
+
+## The difference between identity (I) and tecnhnology matrix (A)
+I - A
+
+### Let us get the inverse of I - A, lets call this C
+C = solve(I - A)
+
+C
+
+## Now multiply with the final demand
+C %*% D
+
+```
 

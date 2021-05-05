@@ -115,7 +115,7 @@ A       \\
 
 - We know the determinant is -23. 
 
-- We now get the cofactor matrices in a manner we have looked at previously. 
+- We now get the co-factor matrices in a manner we have looked at previously. 
 
 - Start on the top right, circle the two and draw a vertical and horizontal line from the two. 
 
