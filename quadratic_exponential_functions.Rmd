@@ -1,0 +1,291 @@
+---
+title: 'Quadratic & Exponential Functions'
+author: "John Karuitha"
+date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background
+In chapter 1, we covered linear functions. In this chapter, we will cover quadratic functions and exponential functions together with their applications. 
+
+## Quadratic Functions
+A quadratic equation in one variable is an equation that can be written in the general form of 
+
+$ax^{2} + bx + c = 0$ for $a \neq 0$
+
+*Ponder: What would happen if $a = 0$?*
+
+In this case a, b, and c represent constants. For example, the equations
+
+$y = 3x^{2} + 4x + 1$
+
+$2x^{2} + 1 = x^{2} - x$
+
+## Zero Product Property
+
+For real numbers $a$ and $b$, $ab = 0$ if and only if $a = 0$ or $b = 0$ or both. Hence, to solve by factoring, we must first write the equation with zero on one side.
+
+## Solving quadratic equations by factoring
+
+Here it is worth illustrating with an example;
+
+### Example 1
+Solve the following quadratic equations by factoring; 
+
+i. $6x^{2} + 3x = 4x + 2$
+
+ii. $6x^{2} = 9x$
+
+## Solution 1: $6x^{2} + 3x = 4x + 2$
+
+We first write the equation with a zero on one side of the equals sign.
+
+$6x^{2} + 3x - 4x - 2 = 0$
+
+$6x^{2} - x - 2 = 0$
+
+## Solution 1: $6x^{2} + 3x = 4x + 2$
+
+We must now get two numbers whose product is -12 (6 * -2)  and whose sum is -1 (the -1 contained in -x).  These are 3 and -4. Verify this.  Hence
+
+$6x^{2} + 3x - 4x - 2 = 0$
+
+$3x(2x + 1) - 2(2x + 1) = 0$
+
+$(3x - 2)(2x + 1) = 0$ 
+
+For this relation to hold, either $3x - 2 = 0$ or $2x + 1 = 0$ or both are equal to zero. 
+
+Hence, $x = \frac{2}{3}$ or $x = -\frac{1}{2}$
+
+## Solution 2: $6x^{2} = 9x$
+
+We rewrite $6x^{2} - 9x = 0$, note that we have a silent zero at the end, 
+
+$6x^{2} - 9x + 0 = 0$
+
+Because our c is zero, we go straight and factorise. 
+
+$6x^{2} - 9x = 0$
+
+$3x(2x - 3) = 0$
+
+Either $3x = 0$ or $2x - 3 = 0$. Hence, $x = 0$ or $x = \frac{3}{2}$
+
+## Additional exercises
+
+Solve by factoring; 
+
+i. $(y - 3)(y -2) = -4$
+
+ii. $\frac{x + 1}{3x + 6} = \frac{3}{x} + \frac{2x + 6}{x(3x + 6)}$
+
+## Other methods of solving quadratic equations
+
+The other methods of solving quadratic equations are 
+
+- Completing the square. 
+
+- The formula method. 
+
+The formula method is what we shall dwell in. It is generalizable to all forms of quadratic equations and straight forward to apply. This is the examinable bit of this course, the formula method. Note that this is NOT to mean that factorisation and completion of square are not useful. 
+
+## Remember; 
+
+$ax^{2} + bx + c = 0$ for $a \neq 0$ is the general form of the quadratic equation. 
+
+The quadratic formula is as follows. 
+
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$.
+
+All you need is to identify a, b, and c and then plug them into the formulas.
+
+## Examples
+
+Solve the following quadratic equations by factoring; 
+
+i. $6x^{2} + 3x = 4x + 2$
+
+ii. $6x^{2} = 9x$
+
+## Solution 1: $6x^{2} + 3x = 4x + 2$
+
+We first write the equation with a zero on one side of the equals sign.
+
+$6x^{2} + 3x - 4x - 2 = 0$
+
+$6x^{2} - x - 2 = 0$
+
+Here, $a = 6$, $b = -1$, and $c = -2$. Hence 
+
+$x=\frac{-(-1)\pm\sqrt{(-1)^2-4(6)(-2)}}{2(6)}$
+
+Carefully check the signs. It is better to insert the full numbers in brackets then resolve the equations. 
+
+## Solution 1: $6x^{2} + 3x = 4x + 2$
+
+$x=\frac{1\pm\sqrt{(1 - (-48)}}{12}$
+
+$x=\frac{1\pm\sqrt{49}}{12}$
+
+$x=\frac{1\pm7}{12}$
+
+$x=\frac{1 + 7}{12} = \frac{8}{12} = \frac{2}{3}$
+
+$x=\frac{1 - 7}{12} = \frac{-6}{12} = -\frac{1}{2}$
+
+## Solution 2: $6x^{2} = 9x$
+
+We rewrite $6x^{2} - 9x = 0$, note that we have a silent zero at the end, 
+
+$6x^{2} - 9x + 0 = 0$
+
+Here, $a = 6$, $b = -9$, and $c = 0$. Hence, 
+
+$x=\frac{-(-9)\pm\sqrt{(-9)^2-4(6)(0)}}{2(6)}$.
+
+$x=\frac{9\pm\sqrt{81 - 0}}{12}$.
+
+$x=\frac{9\pm\sqrt{81}}{12}$.
+
+$x=\frac{9\pm9}{12}$. so x = 0 or $x = \frac{18}{12} = \frac{3}{2}$
+
+- Just go step by step not to get confused by the signs. 
+
+## Quadratic discriminant
+
+Given $ax^{2} + bx + c = 0$ for $a \neq 0$, then if; 
+
+i) $b^2-4ac > 0$, then the equation has two distinct solutions, else if;
+
+ii) $b^2-4ac = 0$ then the equation has exactly one real solution, else;
+
+iii) $b^2-4ac < 0$ then the equation has no real solution. 
+
+## Applications
+
+### Falling objects
+
+Falling Object
+A tennis ball is thrown into a swimming pool from the top of a tall hotel. The height of the ball from the pool is modeled by $D(t) = -16t^{2}- 4t + 300$ feet, where t is the time, in seconds, after the ball was thrown. How long after the ball was thrown was it 144 feet above? 
+
+Hint: Set $D(t) = 144$
+
+## Applications
+
+### Trust funds
+
+The function
+
+$B = -1.057t^{2} + 8.259t + 74.07$
+
+describes the Social Security trust fund balance B, in billions of shillings, where t is the number of years past the year 2010 (2010 = 0). For planning purposes, it is important to know when the trust fund balance will be 0. When will this happen. Hint: Set B = 0. 
+
+## Applications
+
+### Profits
+
+Profit Suppose the profit from the sale of x units of a product is; 
+
+$p = 5000x - 30000 - x^{2}$.
+
+- What level(s) of production will yield a profit of Ksh. 25000?
+- Can a profit of more than Ksh. 25000 be made?
+
+
+## Graphing: The Shape of Quadratic functions
+
+When graphed, quadratic functions take the shape of a parabola. Note that unlike the quadratic equation ( which = 0), we equate the function to y. 
+
+$ax^{2} + bx + c = 0$ for $a \neq 0$ is the general form of the quadratic equation.
+
+$ax^{2} + bx + c = y$ for $a \neq 0$ is the general form of the quadratic function. The more common form is $y = ax^{2} + bx + c$
+
+## Graphing: The Shape of Quadratic functions
+
+- Quadratic functions take a U or n shape with symmetry along the x = a. 
+
+- The maximum or minimum (depending on the shape is the vertex). 
+
+- U-shaped quadratic functions have a minimum, while the n-shaped ones have a maximum. 
+
+- The value of a in $y = ax^{2} + bx + c$, determines the shape of the graph of the quadratic function.
+
+## Graphing: The Shape of Quadratic functions
+
+- If a > 0, then we have a U-shaped graph, otherwise, we have an n-shaped graph. 
+
+- The shape of the graph of a quadratic function is parabolic. See below. 
+
+- In the examples below, the symmetry is along x = 0, the y-axis. 
+
+![Shape of Quadratic Functions](parabolas.png)
+
+## Graphing: The Shape of Quadratic functions
+
+- In other cases, the line of symmetry can be different, but always a vertical line x = a for some constant a. See below. 
+
+![Shape of Quadratic Functions](parabola2.png)
+
+## The Shape of Quadratic functions: Maxima or Minima
+
+- We can find the x-coordinate of the vertex of the graph of y 5 ax 2 1 bx 1 c by using the fact that the axis of symmetry of a parabola passes through the vertex. 
+
+- Regardless of the location of the vertex of $y = ax^{2} + bx + c$ or the direction it opens, the y-intercept of the graph of $y = ax^{2} + bx + c$ is (0, c) and there is another point on the graph with y-coordinate c.
+
+- In other words, the y-intercept of any quadratic function is the c in $y = ax^{2} + bx + c$
+
+- Hence, to get the vertex, we can substitute y with c and solve the equation. 
+
+## Graphing: The Shape of Quadratic functions
+
+When graphed, quadratic functions take the shape of a parabola. Note that unlike the quadratic equation ( which = 0), we equate the function to y. 
+
+$ax^{2} + bx + c = 0$ for $a \neq 0$ is the general form of the quadratic equation.
+
+$ax^{2} + bx + c = y$ for $a \neq 0$ is the general form of the quadratic function. The more common form is $y = ax^{2} + bx + c$
+
+## Graphing: The Shape of Quadratic functions
+
+- Quadratic functions take a U or n shape with symmetry along the x = a. 
+
+- The maximum or minimum (depending on the shape is the vertex). 
+
+- U-shaped quadratic functions have a minimum, while the n-shaped ones have a maximum. 
+
+- The value of a in $y = ax^{2} + bx + c$, determines the shape of the graph of the quadratic function.
+
+## Graphing: The Shape of Quadratic functions
+
+- If a > 0, then we have a U-shaped graph, otherwise, we have an n-shaped graph. 
+
+- The shape of the graph of a quadratic function is parabolic. See below. 
+
+- In the examples below, the symmetry is along x = 0, the y-axis. 
+
+![Shape of Quadratic Functions](parabolas.png)
+
+## Graphing: The Shape of Quadratic functions
+
+- In other cases, the line of symmetry can be different, but always a vertical line x = a for some constant a. See below. 
+
+![Shape of Quadratic Functions](parabola2.png)
+
+
+```{r}
+    quadratic_function <- function(a, b, c){ 
+    pos_root <- ((-b) + sqrt((b^2) - 4*a*c)) / (2*a) 
+    neg_root <- ((-b) - sqrt((b^2) - 4*a*c)) / (2*a) 
+    print(pos_root) 
+    print(neg_root) 
+    } 
+
+quadratic_function(-1, 5000, -60000)
+```
+
