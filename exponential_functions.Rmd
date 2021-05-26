@@ -178,7 +178,7 @@ So in general, $Customers = 1000 * 1.1^n$, where n is the number of months.
 
 ## The constant $e$. 
 
-- You will commonly come accross the constant $e$, also called the natural number. 
+- You will commonly come across the constant $e$, also called the natural number. 
 
 - We define $e$ as follows;
 
@@ -268,3 +268,20 @@ ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
 
 ![Laws of Logarithms](logarithm_laws.png)
 
+## Solve for x
+
+$e^{x} = 5$
+
+we know $ln = log_{e}$, so
+
+$ln(e^{x}) = ln(5)$
+
+$log_{e}e^{x} = log_{e}(5)$
+
+$xlog_{e}e = log_{e}(5)$
+
+$x(1) = log_{e}(5)$
+
+$x = log_{e}(5)$
+
+$x = ln(5)$ from your calculator. 
