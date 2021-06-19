@@ -137,7 +137,7 @@
         <ul class="authors">
           <li class="divider"></li>
                                 <li><span><i class="glyphicon glyphicon-user"></i> John Karuitha</span></li>
-                                         <li><span><i class="glyphicon glyphicon-calendar"></i> Wednesday, May 26, 2021</span></li>
+                                         <li><span><i class="glyphicon glyphicon-calendar"></i> Thursday, June 03, 2021</span></li>
                   </ul>     
       </div>
       <div class="book-body fixed">
@@ -228,13 +228,13 @@
 <ul>
 <li>For the second case, the solution is by getting the velocity at x = 20 then subtract the velocity at x = 10.</li>
 </ul>
-<p>At x = 5, we have <span class="math inline">\(average velocity = 96 + 64(20) - 16(20^2) = -5024\)</span></p>
-<p>At x = 1, we have <span class="math inline">\(average velocity = 96 + 64(10) - 16(10^2) = -864\)</span></p>
+<p>At x = 20, we have <span class="math inline">\(average velocity = 96 + 64(20) - 16(20^2) = -5024\)</span></p>
+<p>At x = 10, we have <span class="math inline">\(average velocity = 96 + 64(10) - 16(10^2) = -864\)</span></p>
 <p>hence the velocity is <span class="math inline">\(-5024 - - 864 = -4160\)</span> meaning the ball was reducing speed as it moved upwards as we would expect.</p>
 <ul>
 <li>For the second case, the solution is by getting the velocity at x = (1 + h) then subtract the velocity at x = 1.</li>
 </ul>
-<p>At x = 5, we have <span class="math inline">\(average velocity = 96 + 64(1 + h) - 16(1 + h)^2\)</span></p>
+<p>At x = 1 + h, we have <span class="math inline">\(average velocity = 96 + 64(1 + h) - 16(1 + h)^2\)</span></p>
 <p>At x = 1, we have <span class="math inline">\(average velocity = 96 + 64(1) - 16(1^2) = 144\)</span></p>
 <p>Hence the velocity is <span class="math inline">\(32 - 16h\)</span>.</p>
 <p>Thus, we can use the formula <span class="math inline">\(32-16h\)</span> to determine the velocity of the ball at any height.</p>
@@ -299,9 +299,11 @@
 <div id="the-product-rule" class="section level3">
 <h3>The product rule</h3>
 <p>What happens when we have a function that has two parts multiplied together, for instance <span class="math inline">\(y = (x + 1)(3x^2 + x)\)</span></p>
+<p>Given a function <span class="math inline">\(y = u.v\)</span>, then,</p>
+<p><span class="math inline">\(y&#39; = udv + vdu\)</span></p>
 <p>The product rule comes handy. You hold the first part of the function constant and then differentiate the second part. You then hold the second part constant and differentiate the first. Then, you add the two derivatives together As follows</p>
 <p><span class="math inline">\(y&#39; = (x + 1) \frac{dy}{dx}(3x^2 + x) + (3x^2 + x) \frac{dy}{dx}(x + 1)\)</span></p>
-<p><span class="math inline">\(y&#39; = (x + 1)(6x) + (3x^2 + x)(1)\)</span> = <span class="math inline">\(6x^2 + 6x + 3x^2 + x\)</span> = <span class="math inline">\(9x^2 + 6x + 2\)</span></p>
+<p><span class="math inline">\(y&#39; = (x + 1)(6x + 1) + (3x^2 + x)(1)\)</span> = <span class="math inline">\(6x^2 + 6x + 3x^2 + x\)</span> = <span class="math inline">\(9x^2 + 6x + 2\)</span></p>
 <p>Note that you could also opt to multiply the two parts of the function <span class="math inline">\(y = (x + 1)(3x^2 + x)\)</span> together first and then take the derivative. You should still get the same answer.</p>
 <p>Exercises: Use the product rule to get the derivatives of the following functions. You could also confirm your answer by multiplying the two parts together and then getting the derivative at once.</p>
 <ul>
@@ -347,6 +349,24 @@
 <p><span class="math inline">\(2(x + 1)^1) = 2x + 2\)</span></p>
 <p>The differential of the inner part <span class="math inline">\((x + 1)\)</span> is 1. Then we multiply the two.</p>
 <p>we get <span class="math inline">\(y&#39; = 2x + 2\)</span></p>
+<p>Exercise:</p>
+<p>Differentiate</p>
+<ul>
+<li><span class="math inline">\(y = (3x + 5)^{10}\)</span></li>
+</ul>
+<p>We differentiate the whole function;</p>
+<p><span class="math inline">\(10(3x + 5)^9\)</span></p>
+<p>Then we differentiate the inner part, <span class="math inline">\(3x + 5\)</span>, which gives us 3.</p>
+<p>Multiply the two together.</p>
+<p><span class="math inline">\(y&#39; = 3 * 10(3x + 5)^9\)</span> = <span class="math inline">\(30(3x + 5)^9\)</span></p>
+<p>Exercise 2:</p>
+<p>Differentiate;</p>
+<p><span class="math inline">\(y = (3x^2 + 5x)^{20}\)</span></p>
+<p>The whole function differential is;</p>
+<p><span class="math inline">\(20(3x^2 + 5x)^19\)</span>, then the inner part;</p>
+<p><span class="math inline">\(6x + 5\)</span></p>
+<p><span class="math inline">\(y&#39; = (6x + 5)*20(3x^2 + 5x)^{19}\)</span></p>
+<p><span class="math inline">\(y&#39; = 20(6x + 5)(3x^2 + 5x)^{19}\)</span></p>
 </div>
 </div>
 <div id="differentiating-special-functions-log-exponentials-etc" class="section level2">

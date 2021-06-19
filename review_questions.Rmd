@@ -1,0 +1,107 @@
+---
+title: "ECO 113: Review Questions"
+output: hrbrthemes::ipsum_pdf
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
+
+library(hrbrthemes)
+library(ggplot2)
+library(Cairo)
+library(extrafont)
+
+extrafont::loadfonts()
+options(digits = 3)
+theme_set(tidyquant::theme_tq)
+```
+
+# **Purpose**
+
+The purpose of the questions is allow students revise for the upcoming examination next week. A few of the questions will also serve as a second CAT to be submitted a week after the end of the examinations although it will be fine to submit even earlier through the email johnkaruitha14@outlook.com. 
+
+From my experience, students tend to ignore theoretical concepts like definitions which is a mistake at this level. 
+
+Again note that these questions just serve as a sample of the level the exam will be at and do not replicate the actual exam. Please review all the topics thoroughly. 
+
+## **Question one**
+
+a. Define the following terms.
+
+  - Column matrix. 
+  - Row matrix. 
+  
+b. Use the crammers rule to solve the follwing system of equations. 
+
+$x + 2y = 5$
+
+$2x - y = 0$
+
+## **Question two**
+
+Break-even and profit maximization A certain company has fixed costs of Ksh. 15,000 for its product and
+variable costs given by $140 + 0.04x$ Shillings per unit, where x is the total number of units. The selling price of the product is given by $300 - 0.06x$ Shillings per unit.
+
+a. Formulate the functions for total cost and total revenue (in other words what is the cost and revenue associated with producing and selling x units, respectively. Note total cost = cost per unit * number of units). 
+b. Find the break-even quantities.
+c. Find the level of sales that maximizes revenue (here, you can use differentiation).
+d. Form the profit function and find the level of production and sales that maximizes profit.
+e. Find the profit (or loss) at the production levels found in parts (c) and (d).
+
+## **Question three**
+
+Suppose a calculator manufacturer has the total cost given by the equation;
+
+$c(x ) = 85x + 3300$
+ 
+The total revenue is $R(x ) = 385x$
+
+a. What is the profit function for the computer company?
+b. How many computers must the company sell to avoid losing money?
+c. What is the profit/loss from the sale of 400 computers?
+
+## **Question four**
+
+Suppose that a certain product has the following demand and supply functions. 
+
+a. Demand $60p + q = 2100$
+b. Supply $120p - q = 540$
+
+If a Ksh 0.50 tax per item is levied on the supplier, who passes it on to the consumer as a price increase, find the market equilibrium point after the tax.
+
+## **Question five**
+
+A look at the industrial sector of an economy can be simplified to include three industries: the mining industry, the manufacturing industry, and the fuels industry. The technology matrix for this sector of the economy is given by
+
+\[
+{\begin{bmatrix}
+A       \\
+            \end{bmatrix}
+            }
+            =
+{\begin{bmatrix}
+0.4  & 0.2 & 0.2 & mining   \\
+0.2 & 0.4 & 0.2 & manufacturing    \\
+0.1 & 0.2 & 0.2 & fuels
+            \end{bmatrix}
+            }
+\]
+
+
+Find the gross production of each industry if surpluses of 72 units of mined goods, 40 units of manufactured
+goods, and 220 units of fuels are desired.
+
+
+## **Question six**
+
+Evaluate the following derivatives and integrals. 
+
+a. Find $y'= \frac{dy}{dx}$ for the function $y = \frac{(3x + 1)^2}{x^2 - 4}$. 
+b. Find $y'= \frac{dy}{dx}$ for the function $y = (\frac{x + 1}{1 - x^2})^3$. 
+c) Evaluate the following integrals
+
+i) $\int_{-3}^{2} (x^2 + 4) \,dx$ \hfill\. 
+
+ii) $\int_{0}^{2} \frac{x^2}{4} \,dx$ \hfill\.
+
+

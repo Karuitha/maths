@@ -106,15 +106,15 @@ hence the velocity is $16 - 144 = -128$ meaning the ball was reducing speed as i
 
 - For the second case, the solution is by getting the velocity at x = 20 then subtract the velocity at x = 10. 
 
-At x = 5, we have $average velocity = 96 + 64(20) - 16(20^2) = -5024$
+At x = 20, we have $average velocity = 96 + 64(20) - 16(20^2) = -5024$
 
-At x = 1, we have $average velocity = 96 + 64(10) - 16(10^2) = -864$
+At x = 10, we have $average velocity = 96 + 64(10) - 16(10^2) = -864$
 
 hence the velocity is $-5024 - - 864 = -4160$ meaning the ball was reducing speed as it moved upwards as we would expect.
 
 - For the second case, the solution is by getting the velocity at x = (1 + h) then subtract the velocity at x = 1. 
 
-At x = 5, we have $average velocity = 96 + 64(1 + h) - 16(1 + h)^2$
+At x = 1 + h, we have $average velocity = 96 + 64(1 + h) - 16(1 + h)^2$
 
 At x = 1, we have $average velocity = 96 + 64(1) - 16(1^2) = 144$
 
@@ -207,11 +207,15 @@ Using each of the above derivatives, find the gradient or rate of change at the 
 
 What happens when we have a function that has two parts multiplied together, for instance $y = (x + 1)(3x^2 + x)$
 
+Given a function $y = u.v$, then, 
+
+$y' = udv + vdu$
+
 The product rule comes handy. You hold the first part of the function constant and then differentiate the second part. You then hold the second part constant and differentiate the first. Then, you add the two derivatives together As follows
 
 $y' = (x + 1) \frac{dy}{dx}(3x^2 + x) + (3x^2 + x) \frac{dy}{dx}(x + 1)$
 
-$y' = (x + 1)(6x) + (3x^2 + x)(1)$ = $6x^2 + 6x + 3x^2 + x$ = $9x^2 + 6x + 2$
+$y' = (x + 1)(6x + 1) + (3x^2 + x)(1)$ = $6x^2 + 6x + 3x^2 + x$ = $9x^2 + 6x + 2$
 
 Note that you could also opt to multiply the two parts of the function $y = (x + 1)(3x^2 + x)$ together first and then take the derivative. You should still get the same answer. 
 
@@ -277,6 +281,37 @@ The differential of the inner part $(x + 1)$ is 1. Then we multiply the two.
 
 we get $y' = 2x + 2$
 
+Exercise:
+
+Differentiate 
+
+- $y = (3x + 5)^{10}$
+
+We differentiate the whole function; 
+
+$10(3x + 5)^9$
+
+Then we differentiate the inner part, $3x + 5$, which gives us 3. 
+
+Multiply the two together. 
+
+$y' = 3 * 10(3x + 5)^9$ = $30(3x + 5)^9$
+
+Exercise 2: 
+
+Differentiate; 
+
+$y = (3x^2 + 5x)^{20}$
+
+The whole function differential is;
+
+$20(3x^2 + 5x)^19$, then the inner part; 
+
+$6x + 5$
+
+$y' = (6x + 5)*20(3x^2 + 5x)^{19}$
+
+$y' = 20(6x + 5)(3x^2 + 5x)^{19}$
 
 ## Differentiating Special Functions (log, exponentials, etc)
 
