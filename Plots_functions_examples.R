@@ -1,0 +1,43 @@
+library(tidyverse)
+theme_set(ggthemes::theme_clean())
+x = -100:100
+tibble(
+  x, y = 2 * x + 3,
+  ysq = x**2 + 2*x + 1
+) %>% 
+  ggplot(aes(x = x, y = y)) +  
+  geom_line(linewidth = 3) + 
+  labs(title = "Plot of Y against X, for Y = 2X + 3")
+
+tibble(
+  x, y = 2 * x + 3,
+  ysq = x**2 + 2*x + 1
+) %>% 
+  ggplot(aes(x = x, y = ysq)) +  
+  geom_line(linewidth = 3) + 
+  labs(title = "Plot of Y against X, for X^2 + 2X + 1")
+
+tibble(
+  x, y = 2 * x + 3,
+  ysq = x**2 + 2*x + 1,
+  ycubed = x ^ 3
+) %>% 
+  ggplot(aes(x = x, y = ycubed)) +  
+  geom_line(linewidth = 3) + 
+  labs(title = "Plot of Y against X Cubed")
+
+## Not a function - circle
+## The equation of a circle is
+## X^2 + y^2 = r^2
+## lets see an example of a circle with radius of 10
+## Thats x^2 + y^2 = 10^2
+circleFun <- function(center = c(0,0),diameter = 1, npoints = 100){
+  r = diameter / 2
+  tt <- seq(0,2*pi,length.out = npoints)
+  xx <- center[1] + r * cos(tt)
+  yy <- center[2] + r * sin(tt)
+  return(data.frame(x = xx, y = yy))
+}
+
+dat <- circleFun(diameter = 10)
+ggplot(dat,aes(x,y)) + geom_path(linewidth = 3)

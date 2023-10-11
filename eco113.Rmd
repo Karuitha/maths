@@ -7,24 +7,28 @@ output:
   html_document: default
   word_document: default
 params:
-  course: 'ECO 113: INTRODUCTION TO MATHS II'
+  course: 'ECO 113 INTRODUCTION TO MATHS II'
 subtitle: School of Business
 always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(lubridate)
 ```
 
-## COURSE OUTLINE: `r params$course`  (March - July, 2021)
+## COURSE OUTLINE: `r params$course`
 
 ## COURSE PURPOSE
-The program aims at equipping the student with skills in statistical analysis for making decisions. The course does so by allowing students to build an intuition instead of merely plugging numbers into a formula.
+
+The program aims to equip the student with mathematical analysis skills for making decisions that form the basis for advanced courses in economics such as Advanced Microeconomics, Advanced Microeconomics, Economics Statistics and Econometrics. The course seeks to build mathematical intuition in students instead of merely plugging numbers into formulas.
 
 ## COURSE TOPICS
-Functions; Exponential and logarithm. Higher - order determinants. Matrix Inversion. Cramer's Rule. Calculus: Maxima and Minima. Integration and applications First - order Differential Equation.
+
+Number System. Functions; Exponential and logarithm. Higher - order determinants. Matrix Inversion. Cramer's Rule. Calculus: Maxima and Minima. Integration and applications First - order Differential Equation.
 
 ## COURSE LEARNING OUTCOMES
+
 At the end of the course, the learner should be able to;
 
 1. Distinguish different types of functions.
@@ -34,34 +38,44 @@ At the end of the course, the learner should be able to;
 
 ## COURSE CONTENT
 
+- The Number System.
+
 - Functions.
+
     - Background and Definitions.
     - Linear equations and functions.
     - Quadratic and other special functions.
     - Exponential and logarithmic functions.
-    - Introduction to R and R Studio.
+    
+- R and R Studio.
+
+    - Introduction to R and R studio.
+    - Introduction to latex, knitr and R markdown.
+    - Writing a report in R Markdown.
     
 - Matrix algebra
+
     - Introduction to matrices and related terminology.
     - Matrix addition, subtraction and multiplication.
     - The determinant and inverse of a matrix.
     - Solving systems of equations - Crammer's Rule. 
     - Applications of matrix algebra- the Leontief input-output models.
     - Matrix algebra in R.
-    - Introduction to latex, knitr and R markdown.
-    - Writing a report in R Markdown
     
 - Higher order determinants
+
     - Determinants for matrices of higher dimensions (greater than 2X2).
     - Applications.
 
 - Differential calculus
+
     - Introduction to differential calculus.
     - Terminology and notation.
     - Rules of differentiation.
     - Applications of differentiation.
 
 - Integral calculus
+
     - Introduction to differential calculus.
     - Terminology and notation.
     - Rules of integretion.
@@ -70,6 +84,7 @@ At the end of the course, the learner should be able to;
 - First order differential equations
 
 ## MODE OF DELIVERY OF THE COURSE
+
 The course will be delivered using online lectures and discussions based on case studies and presentations by students.
 
 ## INSTRUCTIONAL MATERIALS/ EQUIPMENT
@@ -91,7 +106,7 @@ The course will be delivered using online lectures and discussions based on case
 \newpage
 
 ## COURSE ASSESSMENT
-The course will be assessed using 3 continuous assessment tests, 1 project-based class assignment and 1 final exam, as shown in Table 1 below.
+The course will be assessed using 3 continuous assessment tests, 1 project-based class assignment and 1 final exam, as shown in Table 1.
 
 ```{r, echo = FALSE}
 library(tibble)
@@ -104,7 +119,7 @@ tribble(~ Assessment, ~ Contribution,
         "Final Examination", "70%", 
         "TOTAL", "100%") %>% 
   
-  kableExtra::kbl(., caption = "", 
+  kableExtra::kbl(., caption = "Course Evaluation", 
       
   booktabs = TRUE) %>% 
   
@@ -118,7 +133,7 @@ Harshbarger, R. J., & Reynolds, J. J. (2012). Mathematical applications for the 
 
 Wainwright, K. (2005). Fundamental methods of mathematical economics. McGraw-Hill/Irwin.
 
-I will share online resources especially on youtube in the course of the class. 
+I will share on-line resources especially on YouTube in the course of the class. 
 
 
 
